@@ -17,11 +17,40 @@ whenever you write "Variable_Name.", it automatically shows you the methods, whi
 there is a case where declearing as (1) is important
 
 like, 
+
+**code**
+................................
 let hero;
 function getHero(){
     return "Virat Kohli";
 }
 
 hero=getHero();
+................................
+if somehow, some fello developer uses this hero variable as a different type in different function, it will cause problem.
+
+-> Some may use this function as 
+-> 
+**code**
+................................
+function getHero(){
+    return 18;
+}
+................................
+
+That's why, declearing early like
+
+**code**
+................................
+let hero: string;
+
+function getHero(){
+    return "Virat Kohli";
+}
+
+hero=getHero();
+................................
+
+will help...
 
 
