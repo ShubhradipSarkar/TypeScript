@@ -11,7 +11,8 @@ let userId: number=15;
 let isLoggedIn: boolean=false;
 
 // any
-let hero;
+let hero: string;
+
 function getHero(){
     return "Virat Kohli";
 }
