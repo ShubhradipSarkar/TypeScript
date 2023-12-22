@@ -12,7 +12,7 @@ let isLoggedIn: boolean=false;
 
 // any
 let hero: string;
-let department: string="cricket";
+
 function getHero(){
     return "Virat Kohli";
 }
