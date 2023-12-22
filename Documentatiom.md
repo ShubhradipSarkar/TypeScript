@@ -24,4 +24,25 @@ function getHero(){
 
 hero=getHero();
 
+//*Functions*//
+
+**code**
+................................................................................
+function addTwo(num:number){   <---- right way to implement a function...
+    return num+2;
+}
+
+addTwo(5);
+................................................................................
+
+another way to declear functions
+----> /**let loginUser = (name:string, email:string, password:number) => { }**/
+This is a strict way and every parameter is important...
+
+also can set a default value to a parameter
+like, /**let loginUser = (name:string="Ram", email:string, password:number=false) => { }**/
+This way we can skip name and password when using this function...
+
+
+
 
