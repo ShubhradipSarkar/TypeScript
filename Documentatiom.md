@@ -72,6 +72,49 @@ also can set a default value to a parameter
 like, /**let loginUser = (name:string="Ram", email:string, password:number=false) => { }**/
 This way we can skip name and password when using this function...
 
+If we try to fix what a function should return, we can write this like
 
+**code**
+...................................................................................
+function signIn(name:string, email:string, password:number): number{
+    console.log(name.toUpperCase());
 
+    return 5;
+}
+...................................................................................
 
+//*Objects*//
+
+/**code**/
+........................................................................
+type User = {
+    name: string,
+    email: string,
+    isActive: boolean
+}
+
+function createUser_(user: User):User{
+    return user;
+}
+
+createUser_({name:"souvik", email:"chuchu@gmail.com", isActive: true});
+........................................................................
+
+//*Array*//
+syntax---> two ways to declear
+/**code**/
+.........................................................
+const cricketers: string[]=[]    // string array syntax
+// Alternative
+const sportsmen: Array<string>=[]
+
+// array objects
+type Man={
+    name: string,
+    age: number,
+    sde: boolean
+}
+const Men: Man[]=[];
+
+Men.push({name: "Riki", age: 22, sde: true});
+.........................................................
