@@ -23,6 +23,6 @@ seatAllotment="NIT" // works fine
 
 // seatAllotment="IIT" // doesn't work
 
-
+export{}
 
 
