@@ -12,3 +12,17 @@ function getDbId(id: number|string):number|void{  // <--- This function can take
     return id+2;
 }
 
+const data1: number[]=[1,2,3]
+const data2: string[]=["1", "2", "3"]
+const data3: (number|string|boolean)[]=[1,2,"3",true]
+
+// Assign probable value
+let seatAllotment: "NIT"|"IIIT"|"GFTIs"
+
+seatAllotment="NIT" // works fine
+
+// seatAllotment="IIT" // doesn't work
+
+
+
+
